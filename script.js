@@ -14,6 +14,12 @@ let labCount = 0;
 document.addEventListener("DOMContentLoaded", function() {
     let lemon = document.getElementById('lemon');
 
+    //musik
+    document.getElementById('bgMusic').addEventListener('pause', () =>
+    {
+        document.getElementById('bgMusic').play();
+    })
+
     lemon.addEventListener("click", function() {
         clickCount++;
         document.getElementById('click-count').textContent = clickCount;
