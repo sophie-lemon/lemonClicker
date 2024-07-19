@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lemon Clicker</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="header">
+  <button onclick="resetGame()">x</button>
+  <h1> Lemon Clicker </h1>
+</div>
+
+<div class="background">
+  <div class="lemon-container">
+    <img src="img/lemon.png" alt="" id="lemon"/>
+  </div>
+
+  <div class="shop-container">
+    <img src="img/shopSign.png" alt="" id="shopClose" onclick="toggleShopItems()">
+    <div id="shopItems" style="display: none;">
+      <img src="img/shop1.png" alt="" id="shop1" class="shop-item">
+      <img src="img/shop2.png" alt="" id="shop2" class="shop-item">
+      <img src="img/shop3.png" alt="" id="shop3" class="shop-item">
+      <img src="img/shop4.png" alt="" id="shop4" class="shop-item">
+      <img src="img/shop5.png" alt="" id="shop5" class="shop-item">
+    </div>
+  </div>
+
+  <div class="picker-container" id="picker-container"></div>
+
+  <div class="stand-container" id="stand-container"></div>
+
+  <div class="tree-container" id="tree-container"></div>
+
+  <div class="factory-container" id="factory-container"></div>
+
+  <div class="lab-container" id="lab-container"></div>
+
+
+  <div>
+    <h5>
+      <span id="picker-count"> 0 </span> Lemon Picker bought
+      <p>
+        <span id="stand-count"> 0 </span> Lemonade Stands bought
+      </p>
+      <p>
+        <span id="tree-count"> 0 </span> Lemon Trees bought
+      </p>
+      <p>
+        <span id="factory-count"> 0 </span> Lemon Factories bought
+      </p>
+    </h5>
+  </div>
+
+
+  <div>
+    <h3><span id="click-count"> 0 </span> Lemons clicked </h3>
+  </div>
+
+
+</div>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="music/lemonTree.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

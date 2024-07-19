@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/background.png'); /* Pfad zu deinem Hintergrundbild */
+    background-size: cover; /* Skaliert das Bild, um den gesamten Bildschirm zu füllen */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+    background-attachment: fixed; /* Lässt den Hintergrund beim Scrollen fixiert */
+    overflow: hidden;  /* nicht scrollen */
+}
+
+.background {
+    padding-top: 60px; /* Abstand zum Header, abhängig von der Höhe des Headers */
+}
+
+.header {
+    background-image: url("../img/banner-image.png");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.howMany{
+    position: absolute;
+
+}
+
+.lemon-container {
+    position: absolute;
+    bottom: 43%;
+    left: 4%;
+    width: 25%; /* Setzt die Breite des Containers auf 20% der Bildschirmbreite */
+    height: 35%;
+    z-index: 10; /* Damit die Zitrone vor dem Hintergrundbild angezeigt wird */
+}
+
+#lemon {
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer; /* Cursor zu einem Zeiger ändern, wenn über die Zitrone gefahren wird */
+    z-index: 10; /* Damit die Zitrone vor dem Hintergrundbild angezeigt wird */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateX(-10px); /* Weniger Höhe für einen kürzeren Bounce */
+    }
+    60% {
+        transform: translateY(-10px); /* Weniger Höhe für einen kürzeren Bounce */
+    }
+}
+
+.shop-container {
+    position: absolute;
+    top: 15%;
+    left: 91%;
+    width: 8%; /* Setzt die Breite des Containers auf 20% der Bildschirmbreite */
+    z-index: 10; /* Damit die Bilder vor dem Hintergrundbild angezeigt werden */
+    padding: 0; /* Sicherstellen, dass kein Padding vorhanden ist */
+    box-sizing: border-box; /* Damit Padding nicht die Größe beeinflusst */
+}
+
+.shop-container img {
+    width: 100%; /* Bild passt sich 100% der Containerbreite an */
+    height: auto; /* Höhe wird automatisch angepasst */
+    display: block; /* Verhindert unerwarteten zusätzlichen Abstand */
+    cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
+}
+
+.shop-item {
+    display: block;
+}
+
+.picker-container {
+    position: absolute;
+    bottom: 30%;
+    left: 1%;
+    width: 40%; /* Breite des Containers */
+    height: 50%; /* Höhe des Containers */
+    z-index: 1; /* Damit die Zitrone vor dem Hintergrundbild angezeigt wird */
+}
+
+#picker-container img{
+    height: 17%;
+    width: auto;
+}
+
+.stand-container {
+    position: absolute;
+    bottom: 2%;
+    left: -2%;
+    width: 30%;
+    height: 25%;
+    z-index: 1;
+}
+
+#stand-container img{
+    height: 55%;
+    width: auto;
+}
+
+.tree-container {
+    position: absolute;
+    bottom: 2%;
+    left: 26%;
+    width: 30%;
+    height: 33%;
+    z-index: 1;
+}
+
+#tree-container img{
+    height: 50%;
+    width: auto;
+}
+
+.factory-container {
+    position: absolute;
+    bottom: 1%;
+    left: 54%;
+    width: 27%;
+    height: 34%;
+    z-index: 1;
+}
+
+#factory-container img{
+    height: 50%;
+    width: auto;
+}
+
+.lab-container {
+    position: absolute;
+    bottom: 0%;
+    left: 85%;
+    width: 14%;
+    height: 42%;
+    z-index: 5;
+}
+
+#lab-container img{
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+}
+
+h1 {
+    color: #000000;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+h2 {
+    color: #f1c109;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 40pt;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    color: #f1c109;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 17pt;
+    text-align: center;
+}
+
+h5 {
+    color: #f1c109;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    margin: 300px 0 0 0;
+}
+
